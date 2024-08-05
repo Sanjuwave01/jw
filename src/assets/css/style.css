@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,600;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul.pagination li {
+    padding: 20px;
+}
+.tab-bor table tbody tr td {
+    padding: 6px;
+}
+
+.tab-bor table tbody tr {
+    border: 1px solid #9f989845;
+}
+.tab-bor table {
+    width: 100%;
+}
+.tab-bor {
+    text-align: center;
+    width: 100%;
+}
+
+/* body {
+    background-image: url("../img/gif/bg-login-signup.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Nunito", sans-serif;
+} */
+
+.bg-image{
+    background-image: url("../img/gif/bg-login-signup.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Nunito", sans-serif; 
+    justify-content: center; 
+}
+
+.item-center{
+    display: grid;
+    place-items: center;
+}
+
+.otp_all_info{
+    background: linear-gradient(10deg, #12120f -30%, #584a2d 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    /* height: 650px; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.submit_button {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    /* width: 9rem; */
+    height: 3rem;
+    line-height: 2rem;
+    text-align: center;
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    /* margin-top: 50px; */
+    cursor: pointer;
+    padding: 0.5rem 5rem;
+}
+.google_athetication {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    /* width: 9rem; */
+    height: 3rem;
+    line-height: 2rem;
+    text-align: center;
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+    /* margin-top: 50px; */
+    cursor: pointer;
+    padding: 0.5rem 3rem;
+}
+
+.submit_button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+
+.submit_button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #bea675, #725c31, #725c31, #bea675);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+.submit_button:hover::before {
+    filter: blur(10px);
+}
+.an_account{
+    text-decoration: none;
+    border: 2px solid #B9A170;
+    border-radius: 30px;
+    cursor: pointer;
+    padding:0.8rem 3.6rem;
+    font-weight: 600;
+}
+
+@media(width<425px){
+    .submit_button{
+        padding: 0.8rem 4rem ;
+    }
+
+    .an_account{
+        padding: 0.8rem 2rem;
+    }
+}
+
+ .Pin_set_form{
+    background: #776e5eb7;
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+
+  .Pin_set_form input{
+    background-color: #584a2d;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+  }
+
+
+  .Pin_set_form input::placeholder{
+    color: #cacaca;
+    font-size: 14px;
+  }
+
+
+  .otp_code{
+    color: #bea675;
+}
+
+
+
+.logo_img_otp{
+    width: 50px;
+}
+.logo_img_otp img{
+    width: 100%;
+}
+
+  .otp-field input {
+    width: 3rem;
+    height: 3rem;
+    font-size: 22.5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    transition: all 0.1s;
+  }
+
+  .otp-field input:focus {
+    border: 2px solid #54472B;
+    box-shadow: 0 0 2px 2px #fff;
+  }
+
+.message_box{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #bea675;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.message_box i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back_arrow{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #555350;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.back_arrow i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.user_email{
+    color: #bea675;
+}
+
+.otp-field2 input {
+    width: 3rem;
+    height: 3rem;
+    font-size: 22.5px;
+    padding: 10px;
+    text-align: center;
+    /* border-radius: 5px; */
+    background: transparent;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    transition: all 0.1s;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  .reset_pin a{
+    text-decoration: none;
+  }
+
+
+  @media (width < 768px){
+
+
+    /* SET-PIN page */
+    .otp_all_info{
+        width: auto;
+    }
+
+    .message_box{
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* PIN page */
+    .logout_btn{
+        top: 20px;
+        right: 20px;
+
+    }
+
+    /* OTP page */
+    .back_arrow{
+        top: 10px;
+        left: 10px;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+    }
+    .back_arrow i{
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+
+

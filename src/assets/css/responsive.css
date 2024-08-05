@@ -1,0 +1,109 @@
+/* utility  */
+
+.fs-{
+    font-size: 12px !important;
+}
+
+
+/* ** - home page and header - ** */
+
+.localmenu {
+    gap: 6px;
+}
+div#navbarSupportedContent {
+    background: #302f2c;
+}
+
+@media screen and (max-width:1200px){
+    .localmenu {
+        padding: 1.25rem !important;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+    }
+}
+@media screen and (max-width:576px){
+    .localmenu {
+        flex-direction: column !important;        
+    }
+
+    .localmenu > li{
+        width: 100% !important;        
+    }
+}
+
+
+
+
+/* ** - login page and register page - ** */
+
+.submit_button{
+    font-size: 14px  !important;
+}
+
+.google_athetication {
+    height: unset !important;
+    font-size: 14px !important;
+}
+.submit_button::before {
+    transition: all .2s ease-in-out !important;
+    background: #584a2d !important;
+}
+.submit_button:hover::before {
+    filter: unset  !important;
+    transition: .2s !important;
+    background: #4e4125 !important;
+}
+.submit_button {
+    height: unset !important;
+    padding: 0.20rem 5rem !important;
+}
+button.google_athetication {
+    background: #584a2d;
+}
+button.google_athetication:hover{
+    background: #4e4125 !important;
+}
+
+.Pin_set_form {
+    padding: 1.5rem !important;
+}
+
+@media screen and (max-width:576px){
+    .otp_all_info {
+        width: calc(100vw - 10%) !important;
+    }
+}
+
+
+/* ** - Dashboard - ** */
+
+
+@media screen and (min-width:1200px){
+.layout-navbar-fixed:not(.layout-menu-collapsed) .layout-content-navbar:not(.layout-without-menu) .layout-navbar, .layout-menu-fixed.layout-navbar-fixed:not(.layout-menu-collapsed) .layout-content-navbar:not(.layout-without-menu) .layout-navbar, .layout-menu-fixed-offcanvas.layout-navbar-fixed:not(.layout-menu-collapsed) .layout-content-navbar:not(.layout-without-menu) .layout-navbar {
+    left: 0 !important;
+}
+
+    aside#layout-menu + .layout-page .layout-navbar {
+        left:16.25rem !important;
+    }
+}
+
+.layout-navbar-fixed .layout-navbar.navbar-detached {
+    width: calc(100% - 1.5rem * 2 - 0rem) !important;
+}
+aside#layout-menu + .layout-page{
+    width: calc(100% - 1.5rem * 2 - 16.25rem);
+}
+
+
+
+/* pre text  */
+
+.pretext{
+    white-space: pre-wrap;
+}
+
+
+
+
